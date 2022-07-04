@@ -1,17 +1,13 @@
-//returns an array of thank you messages for each name provided
-const cards = [];
-
-function writeCards(recipients, eventType) { 
+function writeCards(recipients, ocassion) { 
+  let cards = [];
   for (let i = 0; i < recipients.length; i++) { 
-    cards.push(`Thank you, ${recipients[i]}, for the wonderful ${eventType} gift!`);
-  } 
+    cards.push(`Thank you, ${recipients[i]}, for the wonderful ${ocassion} gift!`);
+  }
   return cards;
 } 
 
-//counts down from the number provided to zero by invoking console.log once for each number
 function countDown(n) { 
   while (n >= 0) { 
-    console.log(n);
-    n--;
+    console.log(n--);
   }
-}
+} 
